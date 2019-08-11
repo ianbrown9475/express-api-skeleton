@@ -8,12 +8,12 @@ pipeline {
         }
         stage('lint') {
             steps {
-                sh 'gulp lint'
+                sh 'npm run lint lint'
             }
         }
         stage('test') {
             steps {
-                sh 'gulp test'
+                sh 'npm run test'
             }
         }
     }
